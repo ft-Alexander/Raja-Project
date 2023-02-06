@@ -265,7 +265,28 @@ a span{
   .bar{
     background-color: linear-gradient(270deg, rgba(255, 255, 255, 0.9) -27.57%, rgba(94, 85, 85, 0.940104) 1.07%, rgba(66, 62, 62, 0.976562) 27.11%, #000000 43.85%);
   }
+  iframe{
+    width: 100%;
+    min-width: 200px;
+    max-width: 900px;
+  }
   
+.mapouter{
+  position:relative;
+  text-align:left;
+  height:500px;
+  width: 100%;
+  min-width: 200px;
+   max-width:600px;
+  }
+.gmap_canvas {
+  background:none!important;
+  height:500px;
+  width: 100%;
+  min-width: 200px; 
+  max-width:600px;
+}
+
   
   @media (max-width: 991px) {
     .toggle-button{
@@ -322,7 +343,7 @@ a span{
     }
     .smallwhite{
       color: white;
-    }
+    }      
   }
 
   /* Desktop */
