@@ -3,7 +3,25 @@
 *{
     box-sizing: border-box;
 }
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
 
+
+.capsule{
+  animation: transitionIn 0.75s;
+}
+
+html{
+  scroll-behavior: smooth;
+}
 .gold{
     color: #E5AC5B;
 }
@@ -36,6 +54,9 @@
 .uppercase{
     text-transform: uppercase;
 }
+.text-size-15{
+  font-size: clamp(0.75rem, 0.6458rem + 0.3333vw, 0.9375rem);
+}
 
 .text-size-18{
     font-size: clamp(0.75rem, 0.5417rem + 0.6667vw, 1.125rem);
@@ -43,13 +64,16 @@
 }
 
 .text-size-100{
-    font-size: 100px;
+  font-size: clamp(3.125rem, 1.3889rem + 5.5556vw, 6.25rem);
 }
 
 .text-size-25{
     font-size: clamp(0.8125rem, 0.3958rem + 1.3333vw, 1.5625rem);
 }
 
+.text-size-40{
+  font-size: clamp(2.5rem, 2.3264rem + 0.5556vw, 2.8125rem);
+}
 a.grey{
     color: #6F6D6D;
 }
@@ -73,6 +97,9 @@ h2.text-size-25.merriweather{
 .rajaGridImage{
     width: 100%;
     height: auto;
+}
+p.merriweather.readablegrey.text-lg-start.text-size-18{
+  line-height: 23px;
 }
 
 .wrapper a{
@@ -172,11 +199,73 @@ a span{
   a.ps-3.White.nav-link.text-size-18.merriweather:hover{
     color: #E5AC5B;
   }
+  .small{
+    transform: scale(0.9);
+  }
+  .owl-item{
+    transition: all .25s;
+    opacity: 0.5;
+    border-radius: 12px;
+  }
+  .owl-item.active.center{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all .25s;
+  }
+  .star{
+    margin: auto;
+    width: 150px;
+  }
+  .circle-image{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .circle-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
 
+  .space-between{
+    margin: 60px;
+  }
 
+  input,textarea{
+    border: 2px solid #E5AC5B;
+    padding: 7px;
+    border-radius: 5px;
+  }
 
+  .line{
+    border: 1px solid #E5AC5B;
+    height: 48px;
+  }
 
-/* Phone Tablet */
+  .btnsubmit{
+    color: #333;
+    transition: all .25s;
+  }
+
+  .btnsubmit:hover{
+    background-color: #E5AC5B;
+    border: 2px solid white;
+    color: white;
+    transition: all .25s;
+  }
+
+  .merriweather.text-size-25.fst-italic{
+    letter-spacing: 6px;
+  }
+
+  .bar{
+    background-color: linear-gradient(270deg, rgba(255, 255, 255, 0.9) -27.57%, rgba(94, 85, 85, 0.940104) 1.07%, rgba(66, 62, 62, 0.976562) 27.11%, #000000 43.85%);
+  }
+
   @media (max-width: 991px) {
     .toggle-button{
         display: flex;
@@ -225,6 +314,11 @@ a span{
     ul.d-flex.list-inline.align-items-center{
         justify-content: center;
     }
+    .package{
+      width:auto;
+      border: 1px solid #E5AC5B;
+      border-radius: 20px;
+    }
   }
 
   /* Desktop */
@@ -244,10 +338,16 @@ a span{
     .description{
         z-index: 1;
         align-self: center;
-        grid-column: 2/8;
+        grid-column: 2/6;
     }
     
     .rajaGridImage{
         grid-column: 4/-1;
+    }
+  }
+
+  @media (min-width: 993px) and (max-width:1200px){
+    .package{
+      width: 450px;
     }
   }
