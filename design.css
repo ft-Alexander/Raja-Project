@@ -319,6 +319,9 @@ a span{
       border: 1px solid #E5AC5B;
       border-radius: 20px;
     }
+    .smallwhite{
+      color: white;
+    }
   }
 
   /* Desktop */
