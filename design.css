@@ -86,6 +86,15 @@ a.active{
     color: #E5AC5B;
 }
 
+a.grey{
+  padding-bottom: 0 solid white;
+}
+
+a{
+  text-decoration: none;
+}
+
+
 h1.headerSize.uppercase.merriweather-bold{
     letter-spacing: 0.55em;
 }
@@ -292,6 +301,15 @@ a span{
   min-width: none;
 }
 
+div.barcodedets{
+  width: 100%;
+  max-width: 560px;
+}
+
+.barcode{
+  color: white;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.9) -27.57%, rgba(94, 85, 85, 0.940104) -6.11%, rgba(66, 62, 62, 0.976562) 5.53%, #000000 25.94%);
+}
   
   @media (max-width: 991px) {
     .toggle-button{
