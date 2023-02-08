@@ -90,11 +90,6 @@ a.grey{
   padding-bottom: 0 solid white;
 }
 
-a{
-  text-decoration: none;
-}
-
-
 h1.headerSize.uppercase.merriweather-bold{
     letter-spacing: 0.55em;
 }
@@ -304,6 +299,10 @@ a span{
 div.barcodedets{
   width: 100%;
   max-width: 560px;
+}
+
+a{
+  text-decoration: none;
 }
 
 .barcode{
