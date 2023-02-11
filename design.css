@@ -407,6 +407,9 @@ a{
       text-align: center;
       padding: 30px;
     }
+    .gapping{
+      padding: 0;
+    }
   }
 
   /* Desktop */

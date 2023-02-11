@@ -45,16 +45,121 @@
         <h1 class="merriweather-bold text-size-100 text-center">01</h1>
         <h2 class="merriweather text-size-40 text-center">Standard Package</h2>
         <p class="merriweather">Lorem ipsum dolor sit amet consectetur. Cursus ac risus egestas blandit donec nulla lectus. Duis turpis posuere sagittis ac egestas mauris turpis elit ut. Egestas tempus pharetra eros faucibus massa nam. Consectetur eleifend id nam velit fermentum felis duis id volutpat.</p>
-        <a class="merriweather readablegrey" href="#">View Offer</a>
+        <button type="button" class="btn merriweather readablegrey" data-bs-toggle="modal" data-bs-target="#standard"> View Offer</button>
       </div>
       <span class="space-between"></span>
       <div>
         <h1 class="merriweather-bold text-size-100 text-center">02</h1>
         <h2 class="merriweather text-size-40 text-center">Premium Package</h2>
         <p class="merriweather">Lorem ipsum dolor sit amet consectetur. Cursus ac risus egestas blandit donec nulla lectus. Duis turpis posuere sagittis ac egestas mauris turpis elit ut. Egestas tempus pharetra eros faucibus massa nam. Consectetur eleifend id nam velit fermentum felis duis id volutpat.</p>
-        <a class="merriweather readablegrey" href="#">View Offer</a>
+        <button type="button" class="btn merriweather readablegrey" data-bs-toggle="modal" data-bs-target="#premium"> View Offer</button>
       </div>
     </div><br><br><br><br>
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="standard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 merriweather-bold uppercase" id="staticBackdropLabel">Standard Package</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-lg-flex justify-content-around">
+              <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                <img src="../assets/firstImage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title merriweather-bold text-center">Option 1</h5>
+                  <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                  <p class="merriweather">Price: 15,000</p>
+                </div>
+              </div>
+              <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                <img src="../assets/secondImage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title merriweather-bold text-center">Option 2</h5>
+                  <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                  <p class="merriweather">Price: 20,000</p>
+                </div>
+              </div>
+              </div>
+              <span class="gapping"></span>
+              <div class="d-lg-flex justify-content-around">
+                <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                  <img src="../assets/thirdImage.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title merriweather-bold text-center">Option 3</h5>
+                    <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                    <p class="merriweather">Price: 25,000</p>
+                  </div>
+                </div>
+                <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                  <img src="../assets/firstImage.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title merriweather-bold text-center">Option 4</h5>
+                    <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                    <p class="merriweather">Price: 35,000</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="premium" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 merriweather-bold uppercase" id="staticBackdropLabel">Standard Package</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-lg-flex justify-content-around">
+              <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                <img src="../assets/firstImage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title merriweather-bold text-center">Option 1</h5>
+                  <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                  <p class="merriweather">Price: 25,000</p>
+                </div>
+              </div>
+              <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                <img src="../assets/secondImage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title merriweather-bold text-center">Option 2</h5>
+                  <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                  <p class="merriweather">Price: 35,000</p>
+                </div>
+              </div>
+              </div>
+              <span class="gapping"></span>
+              <div class="d-lg-flex justify-content-around">
+                <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                  <img src="../assets/thirdImage.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title merriweather-bold text-center">Option 3</h5>
+                    <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                    <p class="merriweather">Price: 45,000</p>
+                  </div>
+                </div>
+                <div class="card mx-auto mx-lg-0" style="width: 18rem;">
+                  <img src="../assets/firstImage.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title merriweather-bold text-center">Option 4</h5>
+                    <p class="card-text merriweather">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, maxime sunt quidem dicta aperiam tempore saepe eaque, dolore tenetur exercitationem voluptatem similique, voluptatibus odio velit at beatae molestias laudantium vel!</p>
+                    <p class="merriweather">Price: 55,000</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <h1 class="text-center text-center merriweather-bold headerSize">We also Offer!</h1>
     <div class="d-xl-flex align-items-center justify-content-around barcode">
@@ -95,7 +200,6 @@
       </div>
   </div>
     </main>  
-
     <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
     <script type="importmap">
     {
