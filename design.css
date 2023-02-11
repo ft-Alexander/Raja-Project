@@ -304,11 +304,41 @@ div.barcodedets{
 a{
   text-decoration: none;
 }
+.btnvisitbarcode{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  letter-spacing: 2px;
+}
+.btnvisitiraya{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #E5AC5B;
+  color: #333;
+  letter-spacing: 2px;
+}
 
 .barcode{
   color: white;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.9) -27.57%, rgba(94, 85, 85, 0.940104) -6.11%, rgba(66, 62, 62, 0.976562) 5.53%, #000000 25.94%);
 }
+.iraya{
+  color: #333;
+  background: linear-gradient(89.26deg, #B0D09F -3.94%, rgba(217, 217, 217, 0) 70.5%);
+  text-align: right;
+}
+.imageinfo{
+  width: 100%;
+  max-width: 560px;
+}
+.gapping{
+  padding: 600px;
+}
+.text-size-18-no{
+  font-size: clamp(0.75rem, 0.5417rem + 0.6667vw, 1.125rem);
+}
+
   
   @media (max-width: 991px) {
     .toggle-button{
@@ -363,9 +393,20 @@ a{
       border: 1px solid #E5AC5B;
       border-radius: 20px;
     }
-    .smallwhite{
+    .smallwhite{ 
       color: white;
     }      
+    .barcode{
+      text-align: center;
+      height: max-content;
+      padding: 30px;
+      background: linear-gradient(0.61deg, rgba(255, 255, 255, 0.9) -46.54%, rgba(94, 85, 85, 0.940104) -14.94%, rgba(66, 62, 62, 0.976562) 2.2%, #000000 32.26%);
+    }
+    .iraya{
+      background: linear-gradient(1.78deg, #B0D09F -18.87%, rgba(217, 217, 217, 0) 54.7%);
+      text-align: center;
+      padding: 30px;
+    }
   }
 
   /* Desktop */
@@ -400,10 +441,21 @@ div.mx-5{
     padding: 30px 0;
     text-align: center;
 }
+
   }
 
   @media (min-width: 993px) and (max-width:1200px){
     .package{
       width: 450px;
-    }    
+    }   
+    .barcode{
+      text-align: center;
+      background: linear-gradient(0.61deg, rgba(255, 255, 255, 0.9) -46.54%, rgba(94, 85, 85, 0.940104) -14.94%, rgba(66, 62, 62, 0.976562) 2.2%, #000000 32.26%);
+      padding-bottom: 30px;
+    } 
+    .iraya{
+      background: linear-gradient(1.78deg, #B0D09F -18.87%, rgba(217, 217, 217, 0) 54.7%);
+      text-align: center;
+      padding-bottom: 30px;
+    }
   }
