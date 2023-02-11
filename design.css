@@ -332,12 +332,28 @@ a{
   width: 100%;
   max-width: 560px;
 }
-.gapping{
-  padding: 600px;
-}
 .text-size-18-no{
   font-size: clamp(0.75rem, 0.5417rem + 0.6667vw, 1.125rem);
 }
+.btndesign{
+  color: white;
+  background-color: #E5AC5B;
+  border: 1px solid #E5AC5B;
+}
+.btndesignstandard{
+  color: white;
+  background-color: #333;
+}
+.btndesignstandard:hover{
+  color: #E5AC5B;
+}
+.btndesign:hover{
+  color: #333;
+}
+.separate{
+  margin-bottom: 100px;
+}
+
 
   
   @media (max-width: 991px) {
@@ -407,9 +423,7 @@ a{
       text-align: center;
       padding: 30px;
     }
-    .gapping{
-      padding: 0;
-    }
+    
   }
 
   /* Desktop */
