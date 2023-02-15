@@ -16,7 +16,7 @@
 
 
 .capsule{
-  animation: transitionIn 0.75s;
+  animation: transitionIn 1s;
 }
 
 html{
@@ -353,7 +353,26 @@ a{
 .separate{
   margin-bottom: 100px;
 }
-
+.card-button{
+  border: 0px solid white;
+  color: #6F6D6D;
+  padding:20px 20px 20px 0;
+}
+.post{
+  width: 100%;
+  max-width: 500px;
+}
+.round{
+  border-radius: 10px;
+}
+.images-gallery{
+  width: 18rem;
+  padding-bottom: 20px;
+}
+.post-details{
+  width:100%;
+  max-width: 500px;
+}
 
   
   @media (max-width: 991px) {
