@@ -357,6 +357,13 @@ a{
   border: 0px solid white;
   color: #6F6D6D;
   padding:20px 20px 20px 0;
+  background-color: white;
+}
+.card-button-right{
+  border: 0px solid white;
+  color: #6F6D6D;
+  padding:20px 0px 20px 20px;
+  background-color: white;
 }
 .post{
   width: 100%;
@@ -368,6 +375,7 @@ a{
 .images-gallery{
   width: 18rem;
   padding-bottom: 20px;
+  height: 100%;
 }
 .post-details{
   width:100%;
@@ -441,6 +449,12 @@ a{
       background: linear-gradient(1.78deg, #B0D09F -18.87%, rgba(217, 217, 217, 0) 54.7%);
       text-align: center;
       padding: 30px;
+    }
+    .card-button{
+      padding:20px 20px 20px 20px;
+    }
+    .card-button-right{
+      padding:20px 20px 20px 20px;
     }
     
   }
