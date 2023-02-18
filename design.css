@@ -381,7 +381,12 @@ a{
   width:100%;
   max-width: 500px;
 }
-
+.thank-you{
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
   
   @media (max-width: 991px) {
     .toggle-button{

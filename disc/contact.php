@@ -26,7 +26,7 @@
                 <a class="grey pe-3" href="tablescapes.html"><li>Tablescapes</li></a>
                 <a class="grey pe-3" href="featured.html"><li>Featured</li></a>
                 <a class="grey pe-3" href="testimonials.html"><li>Testimonials</li></a>
-                <a class="active" href="contact.html"><li>Contact</li></a>
+                <a class="active" href="contact.php"><li>Contact</li></a>
             </ul>
     </nav>
 
@@ -46,13 +46,33 @@
             <span class="line d-none d-lg-block"></span>
               <p class="merriweather readablegrey text-lg-start text-size-18">rajanagacity@gmail.com <br>(+63) 900 0000 000</p>
         </div>
-        <form action="/action_page.php" style="width: 100%;;">
-            <input class="w-100 merriweather ps-lg-3 text-size-18" type="text" id="fname" name="fname" placeholder="Name"><br><br>
-            <input class="w-100 merriweather ps-lg-3 text-size-18" type="text" id="lname" name="lname" placeholder="Email Adress"><br><br>
+        <?php
+    if(!empty($_POST["send"])){
+        $username = $_POST["fname"];
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+        $telephone = $_POST["telephone"];
+        $subject = $_POST["subject"];
+        $toEmail = $_POST["alexander.espinas@unc.edu.ph"];
+
+        $mailHeaders = "Name: " .$userName."\r\n Email: ".$email."\r\n Phone: ".$telephone."\r\n Subject: ".$subject."\r\n Message: ".$message."\r\n";
+
+        if(mail($toEmail, $username, $mailHeaders)){
+            $message = "Your Information is Recieved Successfuly.";
+        }
+    }
+  ?>
+        <form action="mail.php" method="POST" style="width: 100%;;">
+            <input class="w-100 merriweather ps-lg-3 text-size-18" type="text" id="fname" name="fname" placeholder="Name" required><br><br>
+            <input class="w-100 merriweather ps-lg-3 text-size-18" type="text" id="email" name="email" placeholder="Email Adress" required><br><br>
             <input class="w-100 merriweather ps-lg-3 text-size-18" type="tel" id="telephone" name="telephone" placeholder="Phone Number"><br><br>
-            <textarea class="w-100 merriweather ps-lg-3 text-size-18" name="message" id="message" placeholder="Enter Message Here."></textarea>
+            <input class="w-100 merriweather ps-lg-3 text-size-18" type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+            <textarea class="w-100 merriweather ps-lg-3 text-size-18" name="message" id="message" placeholder="Enter Message Here." required></textarea>
             <p class="merriweather grey text-size-18">Reply will be sent through Email or Text within 24 hours.</p>
-            <input class="merriweather px-4 text-size-18 btnsubmit" type="submit" value="Submit">
+            <?php if(!empty($message)){ ?>
+              <p class="merriweather gold text-size-18"><?php echo $message;?></p>
+            <?php } ?>
+            <input class="merriweather px-4 text-size-18 btnsubmit" type="submit" value="send">
         </form>
     </div><br><br>
 
@@ -100,5 +120,6 @@
 
       new bootstrap.Popover(document.getElementById('popoverButton'))
     </script>
+    
   </body>
 </html>
