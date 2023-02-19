@@ -386,7 +386,7 @@ a{
   text-align: center;
 }
 #Staff,#Attendant,#Difference,#Tagaytay1,#Siruma1,#Sorsogon1,#Standard,#Premium,#BarcodeAnim,#IrayaAnim{
-  visibility: hidden;
+/*   visibility: hidden; */
 }
 
 
