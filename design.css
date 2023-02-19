@@ -13,8 +13,6 @@
     transform: rotateX(0);
   }
 }
-
-
 .capsule{
   animation: transitionIn 1s;
 }
@@ -387,7 +385,74 @@ a{
   margin: auto;
   text-align: center;
 }
-  
+#Staff,#Attendant,#Difference,#Tagaytay1,#Siruma1,#Sorsogon1{
+  visibility: hidden;
+}
+
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}	
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}	
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}		
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+
   @media (max-width: 991px) {
     .toggle-button{
         display: flex;
